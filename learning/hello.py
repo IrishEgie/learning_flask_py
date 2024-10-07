@@ -2,8 +2,6 @@ from flask import Flask
 
 app = Flask(__name__)
 
-
-
 def make_bold(func):
   """A decorator that makes an html text bold""" 
   def bold_wrapper(*args, **kwargs):
@@ -37,9 +35,6 @@ def bye():
     return "<p>Bye!</p>"
 
 @app.route("/username/<name>")
-@make_bold
-@make_italic
-@make_underlined
 def hello_user(name):
     return f"<p>HELLO!!! {name}!</p>"
 

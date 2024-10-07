@@ -1,0 +1,19 @@
+body {
+    display: grid;
+    height: 100vh; /* Make sure the body takes the full height */
+    place-items: center; /* Center both horizontally and vertically */
+    margin: 0; /* Remove default margin */
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center; /* Center text within the h1 */
+}
+
+img {
+    max-width: 100%; /* Make the image responsive */
+    background-color: coral; /* For visibility */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
