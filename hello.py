@@ -21,8 +21,9 @@ def speed_calc_decorator(func):
     result = func(*args, **kwargs)
     end_time = time.time()
     run_time = end_time - start_time
-    print(f"{func.__name__} run speedL {run_time}s")
+    print(f"{func.__name__} run speed: {run_time}s")
     return result
+  
   return wrapper
 
 @speed_calc_decorator
